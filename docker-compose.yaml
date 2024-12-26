@@ -1,0 +1,14 @@
+name: compose_pg
+
+services:
+  postgresql:
+    image: ${PG_IMAGE}
+    container_name: pg
+    restart: always
+    user: root
+    ports:
+      - 5432:5432
+    volumes:
+      - ./volumes/postgresql:/bitnami/postgresql
+    environment:
+      - POSTGRESQL_PASSWORD=${PG_PASSWORD}
