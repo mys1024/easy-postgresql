@@ -1,6 +1,6 @@
 # easy-postgresql
 
-Easily start up a **PostgreSQL** container with **Docker Compose**.
+Easily startup a **PostgreSQL** container with **Docker Compose**.
 
 ## Usage
 
@@ -11,7 +11,7 @@ Easily start up a **PostgreSQL** container with **Docker Compose**.
     PG_PASSWORD=YOUR_PASSWORD
     ```
 
-2. Run the following command to start the container:
+2. Startup:
 
     ```sh
     docker-compose up -d
