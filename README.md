@@ -14,7 +14,7 @@ Easily start up a **PostgreSQL** container with **Docker Compose**.
 2. Run the following command to start the container:
 
     ```sh
-    docker-compose --env-file .env up -d
+    docker-compose up -d
     ```
 
 ## License
