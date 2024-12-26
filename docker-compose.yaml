@@ -2,7 +2,7 @@ name: compose_pg
 
 services:
   postgresql:
-    image: ${POSTGRES_IMAGE}
+    image: ${POSTGRES_IMAGE:-docker.io/library/postgres:17}
     container_name: pg
     restart: always
     ports:
@@ -10,4 +10,4 @@ services:
     volumes:
       - ./volumes/data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-123456}

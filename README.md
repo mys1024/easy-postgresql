@@ -4,11 +4,11 @@ Easily startup a [**PostgreSQL**](https://www.postgresql.org/) container with [*
 
 ## Usage
 
-1. Create a `.env` file in the root of the project with the following configurations:
+1. **(Optional)** Create a `.env` file with your custom configurations:
 
     ```sh
     POSTGRES_IMAGE=docker.io/library/postgres:17
-    POSTGRES_PASSWORD=YOUR_PASSWORD
+    POSTGRES_PASSWORD=123456
     ```
 
 2. Startup:
