@@ -7,8 +7,8 @@ Easily startup a **PostgreSQL** container with **Docker Compose**.
 1. Create a `.env` file in the root of the project with the following configurations:
 
     ```sh
-    IMAGE=docker.io/bitnami/postgresql:latest
-    PG_PASSWORD=YOUR_PASSWORD
+    POSTGRES_IMAGE=docker.io/postgres
+    POSTGRES_PASSWORD=YOUR_PASSWORD
     ```
 
 2. Startup:

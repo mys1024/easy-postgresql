@@ -2,13 +2,12 @@ name: compose_pg
 
 services:
   postgresql:
-    image: ${PG_IMAGE}
+    image: ${POSTGRES_IMAGE}
     container_name: pg
     restart: always
-    user: root
     ports:
       - 5432:5432
     volumes:
-      - ./volumes/postgresql:/bitnami/postgresql
+      - ./volumes/data:/var/lib/postgresql/data
     environment:
-      - POSTGRESQL_PASSWORD=${PG_PASSWORD}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
