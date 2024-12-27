@@ -10,4 +10,5 @@ services:
     volumes:
       - ./volumes/data:/var/lib/postgresql/data
     environment:
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-123456}
