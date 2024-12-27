@@ -1,4 +1,4 @@
-name: compose_pg
+name: easy_postgresql
 
 services:
   postgresql:
