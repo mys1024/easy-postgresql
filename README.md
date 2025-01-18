@@ -4,10 +4,10 @@ Easily startup a [**PostgreSQL**](https://www.postgresql.org/) container with [*
 
 ## Usage
 
-1. Create a `.env` file with your custom configurations:
+1. Create a file named `.env` with your custom configurations:
 
     ```sh
-    POSTGRES_USER=postgres # optional
+    POSTGRES_USER=postgres # optional, defaults to 'postgres'
     POSTGRES_PASSWORD=123456
     ```
 
