@@ -11,7 +11,7 @@ Easily startup a [**PostgreSQL**](https://www.postgresql.org/) container with [*
     POSTGRES_PASSWORD=123456 # optional, defaults to "123456"
     ```
 
-2. Startup:
+2. Start:
 
     ```sh
     docker-compose up -d
