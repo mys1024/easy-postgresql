@@ -1,14 +1,12 @@
-name: easy_postgresql
-
 services:
-  postgresql:
+  pg:
     image: docker.io/library/postgres:17
-    container_name: pg
     restart: always
-    ports:
-      - 5432:5432
-    volumes:
-      - ./volumes/data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=${POSTGRES_USER:-postgres}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-123456}
+    ports:
+      - 5432:5432
+    volumes:
+      - ./volumes/db/data:/var/lib/postgresql/data
+      - ./volumes/db/sock:/var/run/postgresql
