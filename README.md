@@ -1,6 +1,6 @@
 # easy-postgresql
 
-Easily startup a [**PostgreSQL**](https://www.postgresql.org/) container with [**Docker Compose**](https://docs.docker.com/compose/).
+Easily start a [**PostgreSQL**](https://www.postgresql.org/) container with [**Docker Compose**](https://docs.docker.com/compose/).
 
 ## Usage
 
